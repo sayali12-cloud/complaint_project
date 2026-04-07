@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Update Grievence </title>
+    </head>
+    <body>
+        <form method="POST" >
+            <pre>
+            <select id="Status" name="Status">
+           <option value="Solve">Solve</option>
+          <option value="unsolve">Unsolve</option>
+</select>
+
+        <input type="submit"  name="submit" value="submit">
+</pre>
+</form>
+
+{
+ echo "<script> alert('Grievence Solve Successfully ')</script>";
+}
+
+</body>
+</html>

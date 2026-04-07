@@ -1,0 +1,171 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+*{
+  margin: 0;
+  padding: 0;
+}
+body{    
+ background-image: url('seat1.jpg');
+  background-size: cover;
+  
+} 
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {  
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+    padding: 50px;  
+  background-color: lightcoral;
+  
+  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 90%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;
+  font-size:14;
+  
+   background: #f1f1f1;  
+ 
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(246, 244, 239);  
+  font-size:20px;
+  text-size:8px;
+  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: black;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 90%;  
+  opacity: 0.9; 
+  font-size:20px;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+
+.container1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(19, 129, 226);
+            padding: 5px;
+        }
+
+        .container1 img{
+            width: 50px;
+            height: 40px;
+        }
+
+        .container1 ul{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 40%;
+        }
+
+        .container1 ul li{
+            padding-top: px;
+            list-style: none;
+        }
+
+        .container1 ul li a{
+            border-radius: 5px;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+
+        .container1 ul li a:hover{
+            background-color:cornsilk;
+            transition: 0.5s;
+        } 
+</style>  
+</head>  
+<body>
+  
+<form action="pass.php"method="POST">
+  <div class="container">  
+  <center>  <h1>Bus Pass Form</h1> </center>   
+  <label> <h3>  Full Name</h3> </label> 
+   <div>  
+<input type="text" name="fname" placeholder= "Fullname" size="15" required /> <br>     
+  </div>  
+  <label> <h3> profile Image</h3> </label> 
+<div>   
+  <input id="image" type="file" name="profile photo"/> <br>
+   <div>
+  <label> <h3> Contact No</h3> </label>   
+  <input type="text" name="cno" placeholder= "Contact" size="2" required /> <br>
+   </div> 
+   <label> <h3>Email Id</h3> </label>  
+   <div>   
+  <input type="text" name="email" placeholder= "email" size="2" required /> <br>
+  </div>
+   <label> <h3> Source</h3> </label> 
+   <div>   
+  <input type="text" name="soc" placeholder= "Source" size="2" required /> <br>
+   </div>
+   <label> <h3> Destination</h3> </label>   
+  <input type="text" name="des" placeholder= "destination" size="2" required /> <br>
+  <div>
+   <label> <h3> From Date</h3> </label>
+    
+  <input type="date" name="from" placeholder= "fromdate" size="2" required /> <br>
+   <div>
+   <label><h3> Age  </h3> </label>	  
+  <input type="text"name="age"  placeholder= "age"size="10" required><br>
+  </div>
+   
+<label> <h3>  
+Bus Pass Type :  
+</h3></label>   
+  
+<select name=" Busty">  
+<option value=" Type">Buss Pass Type</option> 
+<option value="Student">Student</option>  
+<option value="Handicapped">Handicapped</option>  
+<option value="Senior Citizen">Senior Citizen</option>  
+<option value="NGO'S">NGO'S</option>    
+<option value="Employee">Employee</option>  
+</select>  
+</div>  
+<div>  
+<label> <h3>  
+Gender :  
+</h3></label><br>  
+<input type="radio" value="Male" name="gen" checked > Male   
+<input type="radio" value="Female" name="gen"> Female    
+</div>  
+<label> <h3> Cost</h3> </label>   
+  <input type="text" name="cost" placeholder= "cost" size="2" required /> 
+    <input type="submit" class="registerbtn" value="Submit" name="submit">    
+</form>  
+</body>  
+</html>

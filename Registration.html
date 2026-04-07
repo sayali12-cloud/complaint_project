@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(219, 214, 207); 
+  background-image: url('bulb.jpg');
+    background-repeat: no-repeat; 
+}  
+  
+
+    input[type=text]{
+  width: 50%;
+  padding: 8px;
+  margin: 30px 0px; 
+    
+  border: 1px solid rgb(100, 40, 40);
+  border-radius: 2px;
+  
+  
+  box-sizing: padding-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+form {   
+        border: 0px  solid #f89350;   
+    }   
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=reset] {
+      background-color: #04AA6D;
+      color: rgb(243, 240, 240);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+   
+    
+    .container {   
+     width:80%;
+        padding: 20px;   
+        background-color: rgb(78, 243, 199);  
+    }   
+    </style>
+<form action="Registration.php"method="POST">
+    <pre>
+<body>
+    <center>
+    <h1>Registration</h1>
+
+    Enter Full Name<input type="text"="fname"name="fullname" placeholder="Your name..">
+
+    Enter Roll No<input type="text"="rollno"name="rollno" placeholder="Your Roll No..">
+
+    Enter Class <input type="text"="class"name="class" placeholder="Your Class..">
+
+    Enter Division <input type="text"="div"name="div" placeholder="Your Division..">
+
+    Enter Email<input type="text"="email"name="email" placeholder="Your Email..">
+
+    Enter Contact<input type="text"="contact"name="contact" placeholder="Your Contact..">
+
+        Gender  <input type="radio"name="gender" value="Male">Male  
+                <input type="radio"name="gender" value="Female"> Female<br>
+  
+        <input type="submit" value="Submit">  <input type="Reset" value="reset">
+       
+    </center>           
+
+</pre>
+</form>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="home4.css">
+
+<style>  
+body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-image: url('back1.jpg');
+  background-size: cover;
+  background-color: #f4d6bc;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  border: 2px solid rgb(58, 55, 200);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="email"] {  
+  width: 100%;  
+  padding: 10px;  
+  margin: 8px 0;  
+  border: 1px solid #ccc;  
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-size: 16px;
+}  
+
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 12px;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  font-size: 18px;
+  border-radius: 5px;
+}  
+
+.registerbtn:hover {
+  background-color: #45a049;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h4 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  text-decoration: underline;
+}
+</style>  
+</head>  
+<body>  
+
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="College Logo" width="100">
+        </div>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Home</button>
+                <div class="dropdown-content">
+                  <a href="para.html">About College</a>
+                  <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Admin</button>
+                <div class="dropdown-content">
+                 <a href="login.html">Login</a>
+                 <a href="view.php">View Grievance</a>
+                 <a href="updt.php">Update Grievance</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Student</button>
+                <div class="dropdown-content">
+                  <a href="login.html">Login</a>
+                  <a href="complaint.html">Add Grievance</a>
+                  <a href="status.php">View Status</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <form action="r2.php" method="POST">
+    <center><h1>Student Registration Form</h1></center>  
+
+    <label><b>Enter Full Name</b></label>
+    <input type="text" name="fullname" placeholder="Your name.." required> 
+
+    <label><b>Enter Roll No</b></label>
+    <input type="text" name="rollno" placeholder="Your Roll No.." required>
+
+    <label><b>Enter Class</b></label>
+    <input type="text" name="class" placeholder="Your Class.." required>
+
+    <label><b>Enter Division</b></label>
+    <input type="text" name="division" placeholder="Your Division.." required>
+
+    <label><b>Enter Email</b></label>
+    <input type="email" name="emailid" placeholder="Your Email.." required>
+
+    <label><b>Phone</b></label>
+    <input type="text" name="phoneno" placeholder="Your Phone Number.." required>  
+
+    <label><b>Gender</b></label><br>
+    <input type="radio" value="Male" name="gender" required> Male   
+    <input type="radio" value="Female" name="gender"> Female   
+    <input type="radio" value="Other" name="gender"> Other  
+
+    <button type="submit" class="registerbtn">Register</button>
+    
+    <h4>Already have an account? <a href="login.html">Login</a></h4>  
+  </form>  
+</body>  
+</html>

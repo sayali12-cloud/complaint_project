@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(142, 135, 135);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #04AA6D;
+  color: rgb(243, 240, 240);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #cc8a8aed;
+  padding: 20px;
+}
+
+</style>
+<h1>Complaint Form </h1>
+</head>
+<body>
+<form action="complaint.php"method="POST">
+ 
+    Enter Full Name<input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+    Enter Roll No <input type="text" id="rollno" name="rollno" placeholder="Your Roll No..">
+
+
+      Date : <input type="date" id="date" name="trip-start"
+                  value="1990-01-01"
+                   min="1990-01-01" max="2050-12-31"><br>
+
+
+    Complaint <select id="complaint" name="complaint">
+      <option value="select">Select</option>
+      <option value="Hostel">Hostel</option>
+      <option value="Library">Library</option>
+      <option value="Food">Food</option>
+    </select>
+
+    Description About Complaint <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    <input type="Reset" value="reset">
+  </form>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(207, 197, 199); 
+    background-image: url('b4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    align-items: center;
+  
+    
+  }  
+  
+  form {
+   margin-left: 25%;
+   margin-right: 25%;
+   
+   margin-top: 2%;
+   width: 700px;
+  
+  border: 2px solid rgb(23, 24, 26);
+  
+  padding: 0px;
+  
+  background-color:#9caaaa;
+  
+  border-radius: 5px;
+  
+  
+  }
+  
+    
+  input[type=text] {  
+    width: 95%;  
+    padding: 10px;  
+    margin: 2px 0 20px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #ccd1d1b6; 
+    
+    
+  }  
+  
+  .registerbtn {  
+    background-color: #676bee;  
+    color: white;  
+    padding: 15px 15px;  
+    margin: 5px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    
+  }  
+  
