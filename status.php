@@ -1,7 +1,7 @@
 <?php  
  include('connection.php');
  $sql = "SELECT * FROM complaint";  
- $result = mysqli_query($connec, $sql);  
+ $result = mysqli_query($conn, $sql);  
  ?>  
  <!DOCTYPE html>  
  <html>  
