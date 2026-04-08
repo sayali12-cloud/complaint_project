@@ -1,11 +1,11 @@
 <?php  
 include('connection.php');
 
-$sql = "SELECT * FROM complaint WHERE status IN ('solved');
-$result = mysqli_query($connec, $sql);  
+$sql = "SELECT * FROM complaint WHERE status = 'solved'";
+$result = mysqli_query($conn, $sql);  
 
 if (!$result) {
-    die("Error: " . mysqli_error($conne)); // Debugging error
+    die("Error: " . mysqli_error($conn)); // Debugging error
 }
 ?>  
 

@@ -111,8 +111,8 @@ include('connection.php');
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
 $query="select subject from complaint where subject='".$_POST['compl']."'";
-$rs = mysqli_query($connec,$query);
-$cnt=mysqli_affected_rows($connec);
+$rs = mysqli_query($conn,$query);
+$cnt=mysqli_affected_rows($conn);
 if(!$cnt)
 {
     echo"Complaint Not Found";
@@ -120,8 +120,8 @@ if(!$cnt)
 else
 if(isset($_POST['updt']))
 {
-  $query="update compl set status='".$_POST['status']."' where subject='".$_POST['compl']."'";
-  $rs = mysqli_query($connec,$query);
+  $query="update complaint set status='".$_POST['status']."' where subject='".$_POST['compl']."'";
+  $rs = mysqli_query($conn,$query);
 if($query)
 {
     echo"<script>alert('Record updated Successfully');</script>";
